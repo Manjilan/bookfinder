@@ -5,7 +5,7 @@ class SearchBar extends Component {
     return (
       <div>
         <form>
-          <input type="text" placeholder="Search by Book Title or Author" />
+          <input type="text" placeholder="Search by Book Title or Author" name="bookinfo"/>
           <button>Search</button>
         </form>
       </div>

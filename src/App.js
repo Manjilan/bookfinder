@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import BookList from './BookList';
 import SearchBar from './Form';
+import Error from './Error';
+import NotFound from './404';
 import './App.css';
 
 class App extends Component {
