@@ -21,9 +21,9 @@ const Book = () => {
         <img src={bookdata.volumeInfo.imageLinks.thumbnail} />
         <div>
             <p className="book-title">{bookdata.volumeInfo.title}</p>
-            <p>Author: {bookdata.volumeInfo.authors.map(author =>(
-              <p>{author}</p>
-            ))}</p>
+            <div>Author: {bookdata.volumeInfo.authors.map((author, index) =>(
+              <p key={index}>{author}</p>
+            ))}</div>
             <p>Published by: {bookdata.volumeInfo.publisher}</p>
         </div>
       </div>

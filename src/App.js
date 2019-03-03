@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import BookList from './BookList';
-import SearchBar from './Form';
+import Form from './Form';
 import Error from './Error';
 import NotFound from './404';
 import './App.css';
@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Book Finder</h1>
-          <SearchBar />
+          <Form />
           <BookList />
         </header>
       </div>
