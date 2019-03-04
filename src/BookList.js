@@ -2,10 +2,20 @@ import React, { Component } from 'react';
 import Book from "./Book";
 
 class BookList extends Component {
+  constructor(props) {
+    super(props);
+    this.state= {
+      books: []
+    }
+  }
+  componentWillReceiveProps(nextProps){
+     this.setState({books: nextProps.books})
+  }
   render(){
-    console.log(this.props.books);
+    // console.log(this.state.books);
     return(
       <div>
+        <Book info={this.state.books} />
       </div>
     );
   }
