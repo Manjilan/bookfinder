@@ -15,8 +15,8 @@ class Book extends Component{
         <img src={book.volumeInfo.imageLinks.thumbnail} />
         <div>
             <p className="book-title">{book.volumeInfo.title}</p>
-            <div>Author: {book.volumeInfo.authors.map((author, index) =>(
-              <p key={index}>{author}</p>
+            <div>Author: <br />{book.volumeInfo.authors.map((author, index) =>(
+              <span key={index}>{author} </span>
             ))}</div>
             <p>Published by: {book.volumeInfo.publisher}</p>
         </div>
