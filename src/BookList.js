@@ -1,13 +1,14 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import Book from "./Book";
 
-const BookList = () => {
-  const [booksearch, setBooksearch] = useState([]);
-  return(
-    <div>
-      <Book/>
-    </div>
-  );
+class BookList extends Component {
+  render(){
+    console.log(this.props.books);
+    return(
+      <div>
+      </div>
+    );
+  }
 }
 
 export default BookList;
