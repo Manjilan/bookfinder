@@ -4,6 +4,12 @@ import "./Book.css";
 class Book extends Component{
   render(){
     let bookdata = this.props.info.map((book, index) =>{
+      if (!book.volumeInfo.authors) {
+       book.volumeInfo.authors = []
+      };
+      if (!book.volumeInfo.publisher) {
+       book.volumeInfo.publisher = ""
+      };
       return (
         <div className="stack">
         <img src={book.volumeInfo.imageLinks.thumbnail} />
@@ -18,7 +24,7 @@ class Book extends Component{
     )
   });
   return (
-    <div>{bookdata}</div>
+    <div className="list">{bookdata}</div>
   );
 }
 }
