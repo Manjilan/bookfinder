@@ -12,7 +12,7 @@ class BookList extends Component {
      this.setState({books: nextProps.books})
   }
   render(){
-    // console.log(this.state.books);
+    console.log(this.state.books);
     return(
       <div>
         <Book info={this.state.books} />

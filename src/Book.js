@@ -3,7 +3,6 @@ import "./Book.css";
 
 class Book extends Component{
   render(){
-    console.log(this.props.info);
     let bookdata = this.props.info.map((book, index) =>{
       return (
         <div className="stack">
@@ -19,7 +18,7 @@ class Book extends Component{
     )
   });
   return (
-    <div>{/*bookdata*/}</div>
+    <div>{bookdata}</div>
   );
 }
 }
