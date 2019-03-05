@@ -1,11 +1,13 @@
 .stack {
-  height: 250px;
+  height: 260px;
   width: 500px;
   background: white;
   display: flex;
   justify-content: space-between;
   padding: 1%;
   margin: 2% 2%;
+  filter: drop-shadow(-1px 5px 5px #9de0d9);
+  border-radius: 5px;
 }
 p {
   font-size: 16px;

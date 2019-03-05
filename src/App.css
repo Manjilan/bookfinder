@@ -1,5 +1,6 @@
 body {
   background: #eff0f2;
+  font-family: PT sans;
 }
 .App-header {
   display: flex;
@@ -20,7 +21,8 @@ button {
   width: 15em;
   border-radius: 7px;
   margin-left: 20px;
-  color: #ffffff;
-  background: linear-gradient(to right, #5dc1ad, #68ffca);
+  color: #474747;
+  background: linear-gradient(to right, #CCCCCC, #B5D4DE);
   text-transform: uppercase;
+  filter: drop-shadow(-1px 1px 1px #707070);
 }
