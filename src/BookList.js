@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import Book from "./Book";
 
 class BookList extends Component {
   constructor(props) {
     super(props);
-    this.state= {
+    this.state = {
       books: []
-    }
+    };
   }
-  componentWillReceiveProps(nextProps){
-     this.setState({books: nextProps.books})
+  componentWillReceiveProps(nextProps) {
+    this.setState({ books: nextProps.books });
   }
-  render(){
-    console.log(this.state.books);
-    return(
+  render() {
+    return (
       <div>
         <Book info={this.state.books} />
       </div>

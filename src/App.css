@@ -1,8 +1,5 @@
-body{
-  background: #d6d6d6;
-}
-.App {
-  text-align: center;
+body {
+  background: #eff0f2;
 }
 .App-header {
   display: flex;
@@ -10,21 +7,20 @@ body{
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  color: Gray;
+  color: #474747;
 }
 
-input{
+input {
   width: 400px;
   height: 30px;
   border-radius: 7px;
 }
-button{
-  color: black;
+button {
   height: 35px;
-  width: 100px;
+  width: 15em;
   border-radius: 7px;
   margin-left: 20px;
-  color: white;
-  background: #5dc1ad;
+  color: #ffffff;
+  background: linear-gradient(to right, #5dc1ad, #68ffca);
   text-transform: uppercase;
 }

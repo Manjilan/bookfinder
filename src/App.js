@@ -28,6 +28,9 @@ class App extends Component {
       // console.log(response.data.items);
       this.setState({searchResults: response.data.items})
     })
+    .catch(err =>{
+      this.setState({searchResults: "Error... Search Again!!!"})
+    })
   }
   render() {
     return (
